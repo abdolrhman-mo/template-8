@@ -1,0 +1,132 @@
+:root {
+    /* First Image  */
+    --img1-width: 250px;
+    --img1-height: calc(var(--img1-width) * 64/34);
+    --img1-left: calc(100% - var(--img1-width) - 40px);
+    --img1-top: calc(100% - var(--img1-height) + 20px);
+    /* Second Image  */
+    --img2-width: 270px;
+    --img2-height: var(--img2-width);
+    --img2-left: 40px;
+    --img2-top: calc(100% - var(--img2-height) - 150px);
+}
+
+.landing-page .side-img-container {
+    position: relative;
+    height: 100%;
+}
+
+.landing-page .side-img-container:first-of-type {
+
+}
+
+.landing-page .side-img-container:nth-of-type(2) {
+   top: -100%;
+}
+
+/* Images  */
+.landing-page .side-img-container img {
+    position: absolute;
+}
+
+.landing-page .side-img-container img::before {
+    
+}
+
+
+/* First Image  */
+.landing-page .side-img-container:first-of-type img {
+    height: var(--img1-height);
+    width: var(--img1-width);
+    left: var(--img1-left);
+    top: var(--img1-top);
+}
+
+.landing-page .side-img-container:first-of-type::before {
+    content: '';
+    background: var(--color2);
+    width: var(--img1-width);
+    height: var(--img1-height);
+    display: block;
+    position: absolute;
+    left: calc(var(--img1-left) - 35px);
+    top: calc(var(--img1-top) - 35px);
+}
+
+/* Second Image  */
+.landing-page .side-img-container:nth-of-type(2) img {
+    height: var(--img2-height);
+    width: var(--img2-width);
+    left: var(--img2-left);
+    top: var(--img2-top);
+    transform: rotate(15deg);
+}
+
+.landing-page .side-img-container:nth-of-type(2)::before {
+    content: '';
+    background: var(--color3);
+    width: var(--img2-width);
+    height: var(--img2-height);
+    display: block;
+    position: absolute;
+    left: var(--img2-left);
+    top: var(--img2-top);
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --img1-width: 200px;
+        --img2-width: 220px;
+        --img2-height: var(--img2-width);
+    }
+}
+
+@media (max-width: 992px) {
+    /* Image Size and Position  */
+    :root {
+        /* First Image  */
+        --img1-width: 150px;
+        --img1-top: calc(100% - var(--img1-height) - 170px);
+        /* Second Image  */
+        --img2-width: 170px;
+        --img2-top: calc(100% - var(--img2-height) - 250px);
+    }
+    /* Shadow axis  */
+    .landing-page .side-img-container:first-of-type::before {
+        left: calc(var(--img1-left) - 25px);
+        top: calc(var(--img1-top) - 25px);
+    }
+}
+
+@media (max-width: 767px) {
+    /* Image Size and Position  */
+    :root {
+        /* First Image  */
+        --img1-width: 100px;
+        --img1-top: calc(100% - var(--img1-height) - 0px);
+        --img1-left: calc(100% - var(--img1-width));
+    }
+    /* Shadow axis  */
+    .landing-page .side-img-container:first-of-type::before {
+        left: calc(var(--img1-left) - 15px);
+        top: calc(var(--img1-top) - 15px);
+    }
+}
+
+@media (max-width: 567px) {
+    :root {
+        /* First Image  */
+        --img1-width: 80px;
+    }
+}
+
+/* Things That Will Disappear */
+@media (max-width: 767px) {
+    .landing-page .side-img-container:nth-of-type(2) img {
+        display: none;
+    }
+    
+    .landing-page .side-img-container:nth-of-type(2)::before {
+        display: none;
+    }
+}

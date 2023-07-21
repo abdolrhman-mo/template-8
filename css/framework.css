@@ -1,0 +1,20 @@
+/* FAQ */
+.faq .tabs-list .answer {
+    color: #555;
+    background: #DDD;
+    border: 1px solid #DDD;
+    border-top: 0;
+    line-height: 1.7;
+    overflow: hidden;
+    transition: 0.3s;
+    height: 0;
+}
+
+.faq .tabs-list .answer.active {
+    height: 65px;
+}
+
+.faq .tabs-list .answer p {
+    padding: 0;
+    margin: 20px 30px;
+}

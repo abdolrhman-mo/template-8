@@ -1,0 +1,21 @@
+.product {
+    padding-top: 80px;
+    direction: rtl;
+}
+.product .left {
+    float: left;
+    width: 49%;
+    padding-right: 2%;
+}
+.product .right {
+    float: right;
+    width: 49%;
+}
+
+.product .right .product-img {
+    
+}
+
+.product .right .product-img img {
+    width: 100%
+}

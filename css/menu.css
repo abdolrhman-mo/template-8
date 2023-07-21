@@ -1,0 +1,92 @@
+.menu-button {
+    cursor: pointer;
+}
+
+.menu-button span {
+    background: #000;
+    width: 30px;
+    height: 2px;
+    display: block;
+    margin-bottom: 8px;
+    pointer-events: none;
+}
+
+.menu-overlay {
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    transition: opacity .2s ease;
+}
+
+.menu-overlay.active {
+    opacity: 0.6;
+    display: block;
+}
+
+.menu-box {
+    background: var(--color1);
+    width: 0;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: .3s ease;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+    direction: rtl;
+}
+
+@media (max-width: 767px) {
+    .menu-box {
+        width: 100vw;
+        height: 0;
+    }
+}
+
+.menu-box.active {
+    width: 60vw;
+}
+
+@media (max-width: 767px) {
+    .menu-box.active {
+        height: 100vh;
+    }
+}
+
+.menu-box li {
+    list-style: none;
+    font-size: 30px;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+.menu-box li:first-of-type { /* menu button inside the menu-box */
+    padding-top: 30px;
+}
+
+@media (max-width: 767px) {
+    .menu-box.active {
+        width: 100vw;
+    }
+    .menu-box li {
+        font-size: 25px;
+    }
+}
+
+.menu-box.active li {
+    display: block;
+}
+
+.menu-box li:hover {
+    color: #777;
+}

@@ -1,0 +1,67 @@
+.testimonials2 {
+    padding: 80px 0;
+}
+
+.testimonials2 .t-box {
+
+}
+
+.testimonials2 .t-box .t-right,
+.testimonials2 .t-box .t-left {
+    float: left;
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+    .testimonials2 .t-box .t-right {
+        float: none;
+        width: 100%;
+    }
+}
+
+.testimonials2 .t-box .t-left {
+
+}
+
+.testimonials2 .t-box .t-left img {
+    margin: 30px 0;
+}
+
+@media (max-width: 992px) {
+    .testimonials2 .t-box .t-left img {
+        width: 300px
+    }
+}
+
+.testimonials2 .t-box .t-right {
+    text-align: center;
+}
+
+.testimonials2 .t-box .t-right p {
+    font-size: 35px;
+    line-height: 1.7;
+}
+
+@media (max-width: 992px) {
+    .testimonials2 .t-box .t-right p {
+        font-size: 30px;
+        line-height: 1.7;
+    }
+}
+
+.testimonials2 .t-box .t-right .five-stars {
+    
+}
+
+.testimonials2 .t-box .t-right .five-stars .fa-star {
+    color: rgb(255, 193, 7);
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+/* Things That Will Disappear */
+@media (max-width: 767px) {
+    .testimonials2 .t-box .t-left {
+        display: none;
+    }
+}

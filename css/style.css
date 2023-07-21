@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+
+:root {
+    --color1: url('../imgs/background.png');
+    --color2: #E5F8E9;
+    --color3: #DBDCFE;
+    --header-font: 'Gill Sans',
+        'Gill Sans MT',
+        Calibri,
+        'Trebuchet MS',
+        sans-serif; 
+    --text-font: "Cairo", Verdana,
+        Geneva,
+        Tahoma,
+        sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--text-font);
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 30px;
+    font-family: var(--header-font);
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Container Responsive */
+
+@media (max-width: 767px) {
+    .container {
+        width: 400px
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        width: 300px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 690px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 900px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px
+    }
+}
