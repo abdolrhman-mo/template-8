@@ -9,6 +9,11 @@
     display: block;
     margin-bottom: 8px;
     pointer-events: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-button:hover span {
+    background: #4e4e4e;
 }
 
 .menu-overlay {

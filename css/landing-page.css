@@ -24,6 +24,16 @@
     font-size: 25px;
 }
 
+.landing-page nav .logo a {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.landing-page nav .logo a:hover {
+    color: #4e4e4e;
+}
+
 @media (max-width: 567px) {
     .landing-page nav .logo {
         font-size: 20px;
