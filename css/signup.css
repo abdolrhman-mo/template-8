@@ -1,12 +1,12 @@
-.login-container {
+.signup-container {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.login-container .login {
-    height: 350px;
+.signup-container .signup {
+    height: 590px;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -14,25 +14,25 @@
     direction: rtl;
 }
 
-.login-container .login input {
+.signup-container .signup input {
     display: block;
     padding: 10px;
     border-radius: 7px;
     border: none;
 }
 
-.login-container .login input[type=submit] {
+.signup-container .signup input[type=submit] {
     color: #fff;
     background: #9a9a9a;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
-.login-container .login input[type=submit]:hover {
+.signup-container .signup input[type=submit]:hover {
     background: #a7a7a7;
 }
 
-.login-container .login a {
+.signup-container .signup a {
     color: #707070;
     text-decoration: none;
     font-size: 15px;
@@ -41,6 +41,10 @@
     transition: all 0.2s ease-in-out;
 }
 
-.login-container .login a:hover {
-    text-decoration: underline;    
+.signup-container .signup a:hover {
+    text-decoration: underline;
+}
+
+.signup-container .signup select {
+    border-radius: 7px;
 }
